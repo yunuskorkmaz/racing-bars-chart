@@ -1,68 +1,53 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Racing Bars Chart
 
-## Available Scripts
+Bar chart race component for React
 
-In the project directory, you can run:
+## Demo Image
 
-### `yarn start`
+![Demo Image](https://raw.githubusercontent.com/yunuskorkmaz/racing-bars-chart/master/demo.gif)
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Parameters
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+| Name      | Value         | Default Value | Description                    |
+| --------- | ------------- | ------------- | ------------------------------ |
+| data      | array         | []            | Data for drawing the chart     |
+| width     | number        | 800           | Width of component container   |
+| barHeight | number        | 25            | Height of a bar                |
+| style     | CSSProperties | {}            | Styles for component container |
 
-### `yarn test`
+## Data Model
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+| Name  | Value  |
+| ----- | ------ |
+| id    | number |
+| name  | string |
+| color | string |
+| value | number |
 
-### `yarn build`
+## Usage
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```js
+import React from "react";
+import RaceGraph from "racing-bars-chart";
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+function Mychart() {
+	const [data, setData] = React.useState([
+		{ id: 0, name: "Apple", color: "#5c5b58", value: 42 },
+		{ id: 1, name: "Microsoft", color: "#2c78d4", value: 38 },
+		{ id: 2, name: "Google", color: "#8758be", value: 76 },
+		{ id: 3, name: "IBM", color: "#0b32bf", value: 30 },
+		{ id: 4, name: "Huawei", color: "#c8303b", value: 58 },
+		{ id: 5, name: "Samsung", color: "#ca517c", value: 16 },
+		{ id: 6, name: "LG", color: "#5b8f4a", value: 78 },
+	]);
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `yarn build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+	return (
+		<RaceGraph
+			data={data}
+			width={500}
+			barHeight={25}
+			style={{ backgroundColor: "#ddd" }}
+		/>
+	);
+}
+```
