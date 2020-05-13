@@ -2,6 +2,9 @@
 
 Bar chart race component for React
 
+## Demo
+- [Demo](https://yunuskorkmaz.github.io/racing-bars-chart/)
+
 ## Demo Image
 
 ![Demo Image](https://raw.githubusercontent.com/yunuskorkmaz/racing-bars-chart/master/demo.gif)
