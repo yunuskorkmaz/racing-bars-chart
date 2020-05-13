@@ -1,9 +1,9 @@
 [
-	{ "id": 0, "name": "Apple", "color": "#5c5b58", "value": 42 },
-	{ "id": 1, "name": "Microsoft", "color": "#2c78d4", "value": 38 },
-	{ "id": 2, "name": "Google", "color": "#8758be", "value": 76 },
-	{ "id": 3, "name": "IBM", "color": "#0b32bf", "value": 30 },
+	{ "id": 0, "name": "Apple", "color": "#5c5b58", "value": 71 },
+	{ "id": 1, "name": "Microsoft", "color": "#2c78d4", "value": 89 },
+	{ "id": 2, "name": "Google", "color": "#8758be", "value": 32 },
+	{ "id": 3, "name": "IBM", "color": "#0b32bf", "value": 17 },
 	{ "id": 4, "name": "Huawei", "color": "#c8303b", "value": 58 },
-	{ "id": 5, "name": "Samsung", "color": "#ca517c", "value": 16 },
-	{ "id": 6, "name": "LG", "color": "#5b8f4a", "value": 78 }
+	{ "id": 5, "name": "Samsung", "color": "#ca517c", "value": 23 },
+	{ "id": 6, "name": "LG", "color": "#5b8f4a", "value": 44 }
 ]
